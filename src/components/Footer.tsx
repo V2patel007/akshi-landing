@@ -16,6 +16,7 @@ const Footer: React.FC = () => {
           className="space-y-8"
         >
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white">
               Ready to revolutionize how you see?
             </h2>
             <button className="bg-[#4169E1] hover:bg-[#3557c7] text-white px-6 sm:px-8 py-2 sm:py-3 rounded-md text-base sm:text-lg font-medium transition-all duration-300 hover:scale-105 whitespace-nowrap">
