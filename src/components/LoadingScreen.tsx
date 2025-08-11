@@ -25,7 +25,7 @@ const LoadingScreen: React.FC<LoadingScreenProps> = ({ onComplete }) => {
 
   if (!animationData) {
     return (
-      <div className="fixed inset-0 bg-[#070707] flex items-center justify-center z-50">
+      <div className="fixed inset-0 bg-[#000000] flex items-center justify-center z-50">
         <div className="w-32 h-32 border-4 border-[#316BFF] border-t-transparent rounded-full animate-spin"></div>
       </div>
     );
