@@ -3,17 +3,17 @@ import { motion } from 'framer-motion';
 
 const DreamSection: React.FC = () => {
   return (
-    <section className="py-20">
-      <div className="container mx-auto px-20">
+    <section className="py-32">
+      <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="max-w-2xl mx-auto"
+          className="max-w-6xl mx-auto"
         >
           <div 
-            className="relative rounded-2xl p-12 text-center overflow-hidden"
+            className="relative rounded-2xl p-16 md:p-20 text-center overflow-hidden min-h-[500px] flex items-center justify-center"
             style={{
               backgroundImage: 'url(https://res.cloudinary.com/dy9hjd10h/image/upload/v1754934065/Frame_95253_ny0ygu.png)',
               backgroundSize: 'cover',
