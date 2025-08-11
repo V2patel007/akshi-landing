@@ -12,6 +12,7 @@ const Section4: React.FC = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
             className="text-5xl md:text-6xl lg:text-7xl font-bold leading-[0.9]"
+            className="text-5xl md:text-[85px] lg:text-[85px] font-bold leading-[0.9]"
             style={{ fontFamily: 'Lato, sans-serif', fontWeight: '700' }}
           >
             For <span className="text-[#5988FF]">millions</span> of <span className="text-[#5988FF]">visually impaired</span> individuals, navigating the world is a <span className="text-[#5988FF]">daily challenge</span>.
@@ -23,6 +24,7 @@ const Section4: React.FC = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
             className="text-5xl md:text-6xl lg:text-7xl font-bold leading-[0.9]"
+            className="text-5xl md:text-[85px] lg:text-[85px] font-bold leading-[0.9]"
             style={{ fontFamily: 'Lato, sans-serif', fontWeight: '700' }}
           >
             <span className="text-[#5988FF]">AKSHI</span> changes that — using <span className="text-[#5988FF]">advanced AI</span> to <span className="text-[#5988FF]">see</span>, <span className="text-[#5988FF]">understand</span>, and <span className="text-[#5988FF]">speak</span> back to you <span className="text-[#5988FF]">instantly</span>. From <span className="text-[#5988FF]">reading</span> a <span className="text-[#5988FF]">signboard</span> to <span className="text-[#5988FF]">guiding</span> you through <span className="text-[#5988FF]">crowded streets</span>, AKSHI works <span className="text-[#5988FF]">anytime</span>, <span className="text-[#5988FF]">anywhere</span>, without depending on the <span className="text-[#5988FF]">internet</span>.

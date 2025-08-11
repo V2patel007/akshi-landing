@@ -13,14 +13,14 @@ const Footer: React.FC = () => {
           className="space-y-12"
         >
           <h1 
-            className="text-5xl md:text-6xl lg:text-7xl font-bold leading-[0.9] max-w-6xl mx-auto"
+            className="text-5xl md:text-[85px] lg:text-[85px] font-bold leading-[0.9] max-w-6xl mx-auto"
             style={{ fontFamily: 'Lato, sans-serif', fontWeight: '700' }}
           >
             Ready to revolutionize how you see?
           </h1>
           
           <button 
-            className="bg-[#316BFF] hover:bg-[#2557e6] text-white px-16 py-5 rounded-full text-xl font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-[#316BFF]/30"
+            className="bg-[#316BFF] hover:bg-[#2557e6] text-white px-16 py-5 rounded-full text-[20px] font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-[#316BFF]/30"
             style={{ fontFamily: 'Inter, sans-serif' }}
           >
             Try for free
