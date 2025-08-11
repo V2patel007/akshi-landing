@@ -36,6 +36,7 @@ body {
 
 /* Button hover effects */
 button {
+  color:#316BFF
   position: relative;
   overflow: hidden;
 }
