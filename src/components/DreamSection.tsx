@@ -31,7 +31,7 @@ const DreamSection: React.FC = () => {
                 Support us
               </button>
               
-              <p className="text-white text-sm font-semibold" style={{ fontFamily: 'Manrope, sans-serif', fontSize: '14px' }}>
+              <p className="text-white text-sm font-semibold" style={{ fontFamily: 'Manrope, sans-serif', fontSize: '14px', opactiy: 50% }}>
                 share our story
               </p>
             </div>
