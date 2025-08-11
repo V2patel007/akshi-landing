@@ -29,7 +29,7 @@ const ComparisonSection: React.FC = () => {
             <img 
               src="https://res.cloudinary.com/dy9hjd10h/image/upload/v1754862551/Frame_95232_oc3llt.png" 
               alt="Getting assistance comparison" 
-              className="w-full max-w-2xl h-auto"
+              className="w-full h-auto"
             />
           </div>
         </motion.div>
