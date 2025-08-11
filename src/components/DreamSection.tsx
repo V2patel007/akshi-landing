@@ -10,7 +10,7 @@ const DreamSection: React.FC = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="max-w-2xl mx-auto"
+          className="max-w mx-auto"
         >
           <div 
             className="relative rounded-2xl p-12 text-center overflow-hidden"
