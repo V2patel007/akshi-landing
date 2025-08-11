@@ -3,26 +3,20 @@ import { motion } from 'framer-motion';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="py-32 bg-[#070707] text-white">
+    <footer className="py-20 bg-gradient-to-t from-[#000000] to-transparent">
       <div className="container mx-auto px-6 text-center">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="space-y-12"
+          className="space-y-8"
         >
-          <h1 
-            className="text-5xl md:text-6xl lg:text-7xl font-bold leading-[0.9] max-w-6xl mx-auto"
-            style={{ fontFamily: 'Lato, sans-serif', fontWeight: '700' }}
-          >
+          <h2 className="text-3xl md:text-4xl font-bold text-white">
             Ready to revolutionize how you see?
-          </h1>
+          </h2>
           
-          <button 
-            className="bg-[#316BFF] hover:bg-[#2557e6] text-white px-16 py-5 rounded-full text-xl font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-[#316BFF]/30"
-            style={{ fontFamily: 'Inter, sans-serif' }}
-          >
+          <button className="bg-[#4169E1] hover:bg-[#3557c7] text-white px-8 py-3 rounded-md text-lg font-medium transition-all duration-300 hover:scale-105">
             Try for free
           </button>
         </motion.div>

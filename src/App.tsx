@@ -2,10 +2,10 @@ import React, { useState, useEffect } from 'react';
 import LoadingScreen from './components/LoadingScreen';
 import Navigation from './components/Navigation';
 import HeroSection from './components/HeroSection';
-import Section2 from './components/Section2';
-import Section3 from './components/Section3';
-import Section4 from './components/Section4';
-import Section5 from './components/Section5';
+import ComparisonSection from './components/ComparisonSection';
+import DreamSection from './components/DreamSection';
+import AboutSection from './components/AboutSection';
+import ConnectSection from './components/ConnectSection';
 import Footer from './components/Footer';
 
 function App() {
@@ -18,24 +18,12 @@ function App() {
   // Load custom fonts
   useEffect(() => {
     const link1 = document.createElement('link');
-    link1.href = 'https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap';
+    link1.href = 'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap';
     link1.rel = 'stylesheet';
     document.head.appendChild(link1);
 
-    const link2 = document.createElement('link');
-    link2.href = 'https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap';
-    link2.rel = 'stylesheet';
-    document.head.appendChild(link2);
-
-    const link3 = document.createElement('link');
-    link3.href = 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap';
-    link3.rel = 'stylesheet';
-    document.head.appendChild(link3);
-
     return () => {
       document.head.removeChild(link1);
-      document.head.removeChild(link2);
-      document.head.removeChild(link3);
     };
   }, []);
 
@@ -44,14 +32,14 @@ function App() {
   }
 
   return (
-    <div className="min-h-screen bg-[#070707] text-white">
+    <div className="min-h-screen bg-gradient-to-b from-[#0a0a23] via-[#1a1a3a] to-[#000000] text-white">
       <Navigation />
       <main>
         <HeroSection />
-        <Section2 />
-        <Section3 />
-        <Section4 />
-        <Section5 />
+        <ComparisonSection />
+        <DreamSection />
+        <AboutSection />
+        <ConnectSection />
       </main>
       <Footer />
     </div>
