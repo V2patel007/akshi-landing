@@ -32,7 +32,7 @@ const LoadingScreen: React.FC<LoadingScreenProps> = ({ onComplete }) => {
   }
 
   return (
-    <div className="fixed inset-0 bg-[#070707] flex items-center justify-center z-50">
+    <div className="fixed inset-0 bg-[#000000] flex items-center justify-center z-50">
       <div className="w-64 h-64">
         <Lottie 
           animationData={animationData} 
