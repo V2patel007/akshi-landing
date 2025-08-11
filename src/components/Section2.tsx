@@ -14,14 +14,14 @@ const Section2: React.FC = () => {
             className="space-y-10"
           >
             <h1 
-              className="text-5xl md:text-[85px] lg:text-[85px] font-bold leading-[0.9]"
+              className="text-5xl md:text-6xl lg:text-7xl font-bold leading-[0.9]"
               style={{ fontFamily: 'Lato, sans-serif', fontWeight: '700' }}
             >
               From waiting for help… to instant independence
             </h1>
             
             <h2 
-              className="text-2xl md:text-[24px] lg:text-[24px] leading-relaxed text-white"
+              className="text-2xl md:text-3xl leading-relaxed text-white"
               style={{ fontFamily: 'Manrope, sans-serif', fontWeight: '600' }}
             >
               No more relying on someone to read signs, describe surroundings, or guide you. With AKSHI, real-time assistance is just a voice command away.

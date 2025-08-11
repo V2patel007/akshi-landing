@@ -13,14 +13,14 @@ const Section5: React.FC = () => {
           className="text-center space-y-16"
         >
           <h1 
-            className="text-5xl md:text-[85px] lg:text-[85px] font-bold"
+            className="text-5xl md:text-6xl lg:text-7xl font-bold"
             style={{ fontFamily: 'Lato, sans-serif', fontWeight: '700' }}
           >
             Let's Connect
           </h1>
           
           <button 
-            className="bg-[#316BFF] hover:bg-[#2557e6] text-white px-16 py-5 rounded-full text-[20px] font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-[#316BFF]/30"
+            className="bg-[#316BFF] hover:bg-[#2557e6] text-white px-16 py-5 rounded-full text-xl font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-[#316BFF]/30"
             style={{ fontFamily: 'Inter, sans-serif' }}
           >
             Try for Free
@@ -35,7 +35,7 @@ const Section5: React.FC = () => {
               className="text-center space-y-8"
             >
               <h2 
-                className="text-2xl md:text-[24px] lg:text-[24px]"
+                className="text-2xl md:text-3xl"
                 style={{ fontFamily: 'Manrope, sans-serif', fontWeight: '600' }}
               >
                 Supported by
@@ -55,7 +55,7 @@ const Section5: React.FC = () => {
               className="text-center space-y-8"
             >
               <h2 
-                className="text-2xl md:text-[24px] lg:text-[24px]"
+                className="text-2xl md:text-3xl"
                 style={{ fontFamily: 'Manrope, sans-serif', fontWeight: '600' }}
               >
                 Incubated at
