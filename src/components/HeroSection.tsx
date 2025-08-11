@@ -30,7 +30,7 @@ const HeroSection: React.FC = () => {
               Try Now
             </button>
             <p className="text-white" style={{ fontFamily: 'Manrope, sans-serif', fontSize: '12px', opacity: 0.5, marginTop: '10px' }}>
-                Share our story
+               No card required.
               </p>
           </motion.div>
         </motion.div>
