@@ -13,7 +13,7 @@ const ComparisonSection: React.FC = () => {
           className="text-center space-y-16"
         >
           <div className="space-y-6">
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
+            <h2 className="text-6xl font-bold text-white leading-tight">
               From waiting for help... to<br />
               instant independence
             </h2>
