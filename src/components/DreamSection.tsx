@@ -4,13 +4,13 @@ import { motion } from 'framer-motion';
 const DreamSection: React.FC = () => {
   return (
     <section className="py-20">
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-20">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="max-w mx-auto"
+          className="max-w-2xl mx-auto"
         >
           <div 
             className="relative rounded-2xl p-12 text-center overflow-hidden"
