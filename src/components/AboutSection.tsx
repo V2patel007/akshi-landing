@@ -53,7 +53,7 @@ const AboutSection: React.FC = () => {
           className="max-w-4xl mx-auto space-y-12"
         >
           <div className="space-y-8">
-            <div className="text-2xl md:text-3xl leading-relaxed space-y-6">
+            <div className="text-3xl md:text-4xl lg:text-5xl leading-relaxed space-y-6">
               <p>
                 {words1.map((word, index) => (
                   <span
