@@ -89,23 +89,5 @@ const AboutSection: React.FC = () => {
     </section>
   );
 };
-                <span
-                  key={index}
-                  className={`transition-all duration-300 ${
-                    highlightedWords.has(index)
-                      ? 'text-[#5988FF] font-semibold'
-                      : 'text-white'
-                  }`}
-                >
-                  {word}{' '}
-                </span>
-              ))}
-            </div>
-          </div>
-        </motion.div>
-      </div>
-    </section>
-  );
-};
 
 export default AboutSection;
