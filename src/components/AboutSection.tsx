@@ -5,7 +5,8 @@ const AboutSection: React.FC = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
   const [highlightedWords, setHighlightedWords] = useState<Set<number>>(new Set());
 
-  const text = `For millions of visually impaired individuals, navigating the world is a daily challenge. AKSHI changes that — using advanced AI to see, understand, and speak back to you instantly. From reading a signboard to guiding you through crowded streets, AKSHI works anytime, anywhere, without depending on the internet.`;
+  const text = `For millions of visually impaired individuals, navigating the world is a daily challenge. 
+  AKSHI changes that — using advanced AI to see, understand, and speak back to you instantly. From reading a signboard to guiding you through crowded streets, AKSHI works anytime, anywhere, without depending on the internet.`;
   
   const words = text.split(' ');
 
