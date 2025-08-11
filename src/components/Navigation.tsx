@@ -2,7 +2,15 @@ import React from 'react';
 
 const Navigation: React.FC = () => {
   return (
-    <header className="fixed top-0 left-0 right-0 z-40 bg-[#070707]">
+    <header 
+      className="fixed top-0 left-0 right-0 z-40"
+      style={{
+        backgroundImage: 'url(https://res.cloudinary.com/dy9hjd10h/image/upload/v1754932329/BLUE_HUE_gs3qks.png)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}
+    >
       <nav className="container mx-auto px-6 py-6">
         <div className="flex justify-between items-center">
           <div className="flex-1"></div>

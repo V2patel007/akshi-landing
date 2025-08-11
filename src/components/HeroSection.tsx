@@ -3,7 +3,15 @@ import { motion } from 'framer-motion';
 
 const HeroSection: React.FC = () => {
   return (
-    <section className="min-h-screen bg-[#070707] text-white flex items-center justify-center pt-24">
+    <section 
+      className="min-h-screen text-white flex items-center justify-center pt-24"
+      style={{
+        backgroundImage: 'url(https://res.cloudinary.com/dy9hjd10h/image/upload/v1754932329/BLUE_HUE_gs3qks.png)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}
+    >
       <div className="container mx-auto px-6 text-center">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
