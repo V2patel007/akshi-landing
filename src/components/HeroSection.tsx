@@ -20,7 +20,6 @@ const HeroSection: React.FC = () => {
           className="max-w-6xl mx-auto"
         >
           <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold mb-12 leading-[0.9]" style={{ fontFamily: 'Lato, sans-serif', fontWeight: '700' }}>
-          <h1 className="text-6xl md:text-[85px] lg:text-[85px] font-bold mb-12 leading-[0.9]" style={{ fontFamily: 'Lato, sans-serif', fontWeight: '700' }}>
             See the World, Differently
           </h1>
           
