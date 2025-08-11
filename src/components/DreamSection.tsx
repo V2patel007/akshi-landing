@@ -22,7 +22,7 @@ const DreamSection: React.FC = () => {
             }}
           >
             <div className="absolute inset-0 bg-black/20 backdrop-blur-sm"></div>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-8">
+            <h2 className="relative z-10 text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-8 drop-shadow-lg">
               Everyone has dreams, but imagine trying to dream without being able to see.
             </h2>
             
