@@ -26,9 +26,13 @@ const HeroSection: React.FC = () => {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="pt-4"
           >
-            <button className="bg-[#4169E1] hover:bg-[#3557c7] text-white px-8 py-3 rounded-md text-lg font-medium transition-all duration-300 hover:scale-105">
-              Try Now
-            </button>
+           <button
+  className="bg-[#4169E1] hover:bg-[#3557c7] text-white px-8 py-3 rounded-md text-lg font-medium transition-all duration-300 hover:scale-105"
+  onClick={() => window.open('https://akshi-voice-app.netlify.app/', '_blank')}
+>
+  Try Now
+</button>
+
             <p className="text-white" style={{ fontFamily: 'Manrope, sans-serif', fontSize: '12px', opacity: 0.5, marginTop: '10px' }}>
                No card required.
               </p>
