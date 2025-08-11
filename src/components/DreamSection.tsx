@@ -32,7 +32,7 @@ const DreamSection: React.FC = () => {
               </button>
               
               <p className="text-white text-sm font-semibold" style={{ fontFamily: 'Manrope, sans-serif', fontSize: '14px', opacity: 0.5 }}>
-                share our story
+                Share our story
               </p>
             </div>
           </div>
