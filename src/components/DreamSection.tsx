@@ -27,7 +27,7 @@ const DreamSection: React.FC = () => {
                 Everyone has dreams, but imagine trying to dream without being able to see.
               </h2>
               
-              <button className="bg-[#4169E1] hover:bg-[#3557c7] text-white px-8 py-3 rounded-md text-lg font-medium transition-all duration-300 hover:scale-105">
+              <button className="bg-[#4169E1] hover:bg-[#3557c7] text-white px-8 py-3 rounded-md text-lg font-medium transition-all duration-300 hover:scale-105" style="margin-top: 48px;">
                 Support us
               </button>
               
