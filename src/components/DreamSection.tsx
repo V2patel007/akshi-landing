@@ -12,12 +12,21 @@ const DreamSection: React.FC = () => {
           viewport={{ once: true }}
           className="max-w-2xl mx-auto"
         >
-          <div className="bg-gradient-to-br from-blue-900/30 to-purple-900/30 backdrop-blur-sm rounded-2xl p-12 border border-blue-700/30 text-center">
+          <div 
+            className="relative rounded-2xl p-12 text-center overflow-hidden"
+            style={{
+              backgroundImage: 'url(https://res.cloudinary.com/dy9hjd10h/image/upload/v1754934065/Frame_95253_ny0ygu.png)',
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              backgroundRepeat: 'no-repeat'
+            }}
+          >
+            <div className="absolute inset-0 bg-black/20 backdrop-blur-sm"></div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-8">
               Everyone has dreams, but imagine trying to dream without being able to see.
             </h2>
             
-            <button className="bg-[#4169E1] hover:bg-[#3557c7] text-white px-8 py-3 rounded-md text-lg font-medium transition-all duration-300 hover:scale-105">
+            <button className="relative z-10 bg-[#4169E1] hover:bg-[#3557c7] text-white px-8 py-3 rounded-md text-lg font-medium transition-all duration-300 hover:scale-105">
               Support us
             </button>
           </div>

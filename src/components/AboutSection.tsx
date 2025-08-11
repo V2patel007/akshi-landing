@@ -1,9 +1,47 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 
 const AboutSection: React.FC = () => {
+  const sectionRef = useRef<HTMLDivElement>(null);
+  const [highlightedWords, setHighlightedWords] = useState<Set<number>>(new Set());
+
+  const text = `For millions of visually impaired individuals, navigating the world is a daily challenge. AKSHI changes that — using advanced AI to see, understand, and speak back to you instantly. From reading a signboard to guiding you through crowded streets, AKSHI works anytime, anywhere, without depending on the internet.`;
+  
+  const words = text.split(' ');
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (!sectionRef.current) return;
+
+      const rect = sectionRef.current.getBoundingClientRect();
+      const windowHeight = window.innerHeight;
+      const sectionTop = rect.top;
+      const sectionHeight = rect.height;
+      
+      // Calculate scroll progress through the section
+      const scrollProgress = Math.max(0, Math.min(1, (windowHeight - sectionTop) / (windowHeight + sectionHeight)));
+      
+      // Determine how many words should be highlighted based on scroll progress
+      const totalWords = words.length;
+      const wordsToHighlight = Math.floor(scrollProgress * totalWords);
+      
+      // Create set of highlighted word indices
+      const newHighlightedWords = new Set<number>();
+      for (let i = 0; i < wordsToHighlight; i++) {
+        newHighlightedWords.add(i);
+      }
+      
+      setHighlightedWords(newHighlightedWords);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Initial call
+    
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [words.length]);
+
   return (
-    <section className="py-20">
+    <section className="py-20" ref={sectionRef}>
       <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -13,18 +51,19 @@ const AboutSection: React.FC = () => {
           className="max-w-4xl mx-auto space-y-12"
         >
           <div className="space-y-8">
-            <p className="text-2xl md:text-3xl text-white leading-relaxed">
-              For millions of visually impaired individuals, navigating the world is a daily challenge.
-            </p>
-            
-            <div className="space-y-6">
-              <p className="text-2xl md:text-3xl text-white leading-relaxed">
-                <span className="font-bold">AKSHI</span> changes that — using advanced AI to see, understand, and speak back to you instantly.
-              </p>
-              
-              <p className="text-2xl md:text-3xl text-white leading-relaxed">
-                From reading a signboard to guiding you through crowded streets, AKSHI works anytime, anywhere, without depending on the internet.
-              </p>
+            <div className="text-2xl md:text-3xl leading-relaxed">
+              {words.map((word, index) => (
+                <span
+                  key={index}
+                  className={`transition-all duration-300 ${
+                    highlightedWords.has(index)
+                      ? 'text-[#5988FF] font-semibold'
+                      : 'text-white'
+                  }`}
+                >
+                  {word}{' '}
+                </span>
+              ))}
             </div>
           </div>
         </motion.div>
