@@ -5,7 +5,7 @@ const Navigation: React.FC = () => {
     <header 
       className="fixed top-0 left-0 right-0 z-40"
       style={{
-        backgroundImage: 'url(https://res.cloudinary.com/dy9hjd10h/image/upload/v1754932329/BLUE_HUE_gs3qks.png)',
+        backgroundImage: 'url(https://res.cloudinary.com/dy9hjd10h/image/upload/v1754932700/BLUE_HUE_pa6xxd.svg)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat'
