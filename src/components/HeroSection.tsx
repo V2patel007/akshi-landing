@@ -29,6 +29,9 @@ const HeroSection: React.FC = () => {
             <button className="bg-[#4169E1] hover:bg-[#3557c7] text-white px-8 py-3 rounded-md text-lg font-medium transition-all duration-300 hover:scale-105">
               Try Now
             </button>
+            <p className="text-white" style={{ fontFamily: 'Manrope, sans-serif', fontSize: '12px', opacity: 0.5, marginTop: '10px' }}>
+                Share our story
+              </p>
           </motion.div>
         </motion.div>
       </div>
