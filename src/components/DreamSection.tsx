@@ -18,7 +18,11 @@ const DreamSection: React.FC = () => {
               backgroundImage: 'url(https://res.cloudinary.com/dy9hjd10h/image/upload/v1754934065/Frame_95253_ny0ygu.png)',
               backgroundSize: 'cover',
               backgroundPosition: 'center',
-              backgroundRepeat: 'no-repeat'
+              backgroundRepeat: 'no-repeat',
+              paddingLeft: '148px',
+              paddingRight: '148px',
+              paddingTop: '64px',
+              paddingBottom: '64px'
             }}
           >
             <div className="absolute inset-0 bg-black/20 backdrop-blur-sm"></div>
