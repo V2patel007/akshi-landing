@@ -8,7 +8,7 @@ const Navigation: React.FC = () => {
           <img 
             src="https://res.cloudinary.com/dy9hjd10h/image/upload/v1754862550/Hi_1_hgycbl.svg" 
             alt="AKSHI Logo" 
-            className="h-12 w-auto"
+            className="h-20 w-auto"
           />
         </div>
       </nav>
